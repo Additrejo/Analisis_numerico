@@ -1,0 +1,6 @@
+Si tienes el dev c++ abierto cerrarlo.
+Abrir la ubicacion del Dev, normalmente en c:\\ArchivosdePrograma\Dev-Cpp
+Abrir la carpeta MinGW64 y luego la carpeta include, y añadir los archivos "graphics.h" y "winbgim.h".
+luego regresar y abrir la carpeta "lib" y añadir el archivo "libbgi.a".
+Luego ya puedes iniciar el dev.
+Para abrir el proyecto abrir el archivo ".dev"
