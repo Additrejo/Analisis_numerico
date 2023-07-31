@@ -3,7 +3,7 @@
 Instituto Politecnico Nacional. ESIME Z.
 Materia: Analisis numerico.
 Autor: Addi Trejo | Alfredo Trejo.
-Programa: 01.  Grafica del elipse
+Programa: 04.  Grafica del elipse
 Creado Diciembre 2018 
 Descripcion: Graficar un elipse en el plano dada por el usuario.
 ----------------------------------------------------------------------------------------------------------
