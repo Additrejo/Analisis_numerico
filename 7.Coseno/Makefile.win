@@ -1,0 +1,28 @@
+# Project: Coseno
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Coseno.o
+LINKOBJ  = Coseno.o
+LIBS     = -L"W:/Archivos de Programa/Dev-Cpp/MinGW64/lib32" -L"W:/Archivos de Programa/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -lbgi -lgdi32 -luser32 -m32
+INCS     = -I"W:/Archivos de Programa/Dev-Cpp/MinGW64/include" -I"W:/Archivos de Programa/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"W:/Archivos de Programa/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"W:/Archivos de Programa/Dev-Cpp/MinGW64/include" -I"W:/Archivos de Programa/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"W:/Archivos de Programa/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"W:/Archivos de Programa/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Coseno.exe
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Coseno.o: Coseno.cpp
+	$(CPP) -c Coseno.cpp -o Coseno.o $(CXXFLAGS)
